@@ -40,10 +40,10 @@
       <tr class="category-table__row">
         <td class="category-table__item">
          <form class="update-form" action="/categories/update" method="post">
-                 @method('PATCH')
-                 @csrf
+              @method('PATCH')
+              @csrf
             <div class="update-form__item">
-              <input class="update-form__item-input" type="text" name="name" value="{{ $category['name'] }}">
+              <input class="update-form__item-input" type="text"name="name" value="{{ $category['name'] }}">
               <input type="hidden" name="id" value="{{ $category['id'] }}">
             </div>
             <div class="update-form__button">

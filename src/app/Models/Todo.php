@@ -32,4 +32,7 @@ public function scopeKeywordSearch($query, $keyword)
     $query->where('content', 'like', '%' . $keyword . '%');
   }
   }
+
+
+
 }
